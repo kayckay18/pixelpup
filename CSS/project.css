@@ -1,0 +1,556 @@
+/* **************
+    navigation
+************** */
+
+nav.full {
+ box-sizing: border-box;
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ padding: 0;
+ background-color: #EF626C;
+}
+
+@media (max-width: 768px) {
+  nav.full {
+    /* Minimum font size */
+    display: none;
+  }
+}
+
+
+a.nav {
+  color: #F6E8EA;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2em;
+  padding-top: 1em;
+  transition: all .15s ease-in-out;
+
+
+  /* font-size: 2em; */
+}
+
+@media (max-width: 916px) {
+  a.nav {
+    /* Minimum font size */
+    font-size: 2em;
+    text-align: center;
+    padding-top: 0px;
+
+
+  }
+}
+
+a.nav:hover {
+  color: #84DCCF;
+}
+
+/* **********************
+Hamburger menu
+********************* */
+
+
+
+@media (min-width: 768px) {
+  nav.hamburger {
+    /* Minimum font size */
+    display: none;
+  }
+}
+nav.hamburger{
+  background-color: #EF626C;
+  width: 100%;
+}
+
+.coralbackground {
+  background-color: #EF626C;
+}
+
+.right {
+  float: right;
+}
+
+
+a.ham
+{
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 2em;
+  text-decoration: none;
+  color: #EF626C;
+
+  transition: color 0.3s ease;
+}
+
+a.ham:hover
+{
+  color: #EF626C;
+}
+
+#menuToggle
+{
+  display: block;
+  position: fixed;
+  top: 50px;
+  left: 50px;
+
+  z-index: 1;
+
+  -webkit-user-select: none;
+  user-select: none;
+  background-color: #EF626C;
+  padding: 10px 10px 5px 10px;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+
+  cursor: pointer;
+
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+
+  background: #F6E8EA;
+  border-radius: 3px;
+
+  z-index: 1;
+
+  transform-origin: 4px 0px;
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/*
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #EF626C;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+
+  background: #F6E8EA;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+/* **************
+    footer
+************** */
+
+footer {
+ box-sizing: border-box;
+ padding: 0;
+ background-color: #EF626C;
+}
+
+img.icon {
+  display: inline-block;
+  margin: 0 1em 0 0;
+  color: #F6E8EA;
+  height: 32px;
+  /* float: left; */
+}
+
+@media (max-width: 1200px) {
+  img.icon {
+    /* Maximum font size */
+    margin: 0 1em 0 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  #footer {
+    /* Maximum font size */
+    /* margin-left: 33%; */
+
+  }
+}
+
+img.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 100px;
+   }
+
+
+img.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    max-width: 100%;
+   }
+
+   img.small {
+     height: 150px;
+   }
+
+   img.padding {
+       padding-left: .5em;
+      }
+
+    img.right {
+          float: right;
+      }
+
+  img.boxshadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 15px 50px 30px;
+    background: #F6E8EA;
+    padding: 20px;
+
+  }
+
+p.ballerinayanfoot {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 2em;
+    color: #F6E8EA;
+    text-align: right;
+    line-height: 1em;
+    margin: 0;
+
+    }
+
+    @media (min-width: 700px) {
+      p.ballerinayanfoot {
+        /* Minimum font size */
+        font-size: 2em;
+
+      }
+    }
+    @media (max-width: 1200px) {
+      p.ballerinayanfoot {
+        /* Maximum font size */
+        font-size: 1.5em;
+        text-align: center;
+      }
+    }
+
+    p.copyright {
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+        font-weight: bold;
+        font-style: italic;
+        color: #F6E8EA;
+        text-align: center;
+        line-height: 1em;
+        margin: 0;
+
+        }
+
+        @media (min-width: 700px) {
+          p.copyright {
+            /* Minimum font size */
+            font-size: 1em;
+            padding: 0;
+          }
+        }
+        @media (max-width: 1200px) {
+          p.copyright {
+            /* Maximum font size */
+            font-size: 1em;
+            padding: 0;
+          }
+        }
+
+
+        img.displayedroll {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 2em;
+            padding-bottom: 2em;
+            -moz-box-shadow:     0 0px 10px 0 #19323C;
+            -webkit-box-shadow:  0 0px 10px 0 #19323C;
+            box-shadow:          0 0px 10px 0 #19323C;
+           }
+/* **************
+    form
+************** */
+
+label {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: 300;
+  font-size: 2em;
+  display: block;
+  text-align: left;
+  color: #84DCCF;
+
+}
+
+@media (min-width: 700px) {
+  label {
+    /* Minimum font size */
+    font-size: 2em;
+    line-height: .5em;
+    padding-top: .5em;
+  }
+}
+@media (max-width: 1200px) {
+  label {
+    /* Maximum font size */
+    font-size: 2em;
+    line-height: .5em;
+    padding-top: .5em;
+  }
+}
+
+input, textarea {
+  border: 1px solid #84DCCF;
+  border-radius: 5px;
+  background-color: #F3F7F0;
+  -moz-box-shadow:    inset 0 2px 8px 0 #19323C;
+  -webkit-box-shadow: inset 0 2px 8px 0 #19323C;
+  box-shadow:         inset 0 2px 8px 0 #19323C;
+  display: block;
+  width: 100%;
+  height: 2em;
+}
+
+textarea {
+  /* To properly align multiline text fields with their labels */
+  vertical-align: top;
+
+  /* To give enough room to type some text */
+  height: 5em;
+}
+
+button.button {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.5vw;
+  color: #EF626C;
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+
+}
+
+@media (min-width: 700px) {
+  button.button {
+    /* Minimum font size */
+    font-size: 1.5vw;
+  }
+}
+@media (max-width: 1200px) {
+  button.button {
+    /* Maximum font size */
+    font-size: 4vw;
+  }
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #84DCCF;
+  opacity: 10%;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: light;
+  padding-left: .25em;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #84DCCF;
+  opacity: 10%;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: light;
+  padding-left: .25em;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #84DCCF;
+  opacity: 10%;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: light;
+  padding-left: .25em;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #84DCCF;
+  opacity: 10%;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: light;
+  padding-left: .25em;
+}
+
+/* **************
+page transitions
+************** */
+
+.pt-perspective {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	perspective: 1200px;
+	transform-style: preserve-3d;
+}
+
+.pt-page {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	visibility: hidden;
+	overflow: hidden;
+	backface-visibility: hidden;
+	transform: translate3d(0, 0, 0);
+}
+
+.pt-page-current,
+.no-js .pt-page {
+	visibility: visible;
+}
+
+.no-js body {
+	overflow: auto;
+}
+
+.pt-page-ontop {
+	z-index: 999;
+}
+
+/* scale and fade */
+
+.pt-page-scaleDown {
+	animation: scaleDown .7s ease both;
+}
+
+.pt-page-scaleUp {
+	animation: scaleUp .7s ease both;
+}
+
+.pt-page-scaleUpDown {
+	animation: scaleUpDown .5s ease both;
+}
+
+.pt-page-scaleDownUp {
+	animation: scaleDownUp .5s ease both;
+}
+
+.pt-page-scaleDownCenter {
+	animation: scaleDownCenter .4s ease-in both;
+}
+
+.pt-page-scaleUpCenter {
+	animation: scaleUpCenter .4s ease-out both;
+}
+
+/************ keyframes ************/
+
+/* scale and fade */
+
+@keyframes scaleDown {
+	to { opacity: 0; transform: scale(.8); }
+}
+
+@keyframes scaleUp {
+	from { opacity: 0; transform: scale(.8); }
+}
+
+@keyframes scaleUpDown {
+	from { opacity: 0; transform: scale(1.2); }
+}
+
+@keyframes scaleDownUp {
+	to { opacity: 0; transform: scale(1.2); }
+}
+
+@keyframes scaleDownCenter {
+	to { opacity: 0; transform: scale(.7); }
+}
+
+@keyframes scaleUpCenter {
+	from { opacity: 0; transform: scale(.7); }
+}

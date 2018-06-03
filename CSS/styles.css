@@ -1,0 +1,452 @@
+body {
+  background-color: #F3F7F0;
+}
+
+/* **************
+    fonts
+************** */
+
+h1.coralyan{
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 2em;
+  color: #EF626C;
+  text-align: center;
+  line-height: .25em;
+}
+
+/* **********************
+  media query h1.coralyan
+********************** */
+@media (min-width: 700px) {
+  h1.coralyan {
+    font-size: 3em;
+  }
+}
+@media (max-width: 1200px) {
+  h1.coralyan {
+    font-size: 3.5em;
+  }
+}
+
+/* _______________________ */
+
+h1.coralyanreg{
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: bold;
+  color: #EF626C;
+  text-align: center;
+}
+
+/* **********************
+  media query h1.coralyan
+********************** */
+@media (min-width: 700px) {
+  h1.coralyanreg {
+    font-size: 4em;
+  }
+}
+@media (max-width: 1200px) {
+  h1.coralyanreg {
+    font-size: 4em;
+  }
+}
+
+
+
+/* _______________________ */
+
+h1.tanyan {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 2em;
+  color: #F3F7F0;
+  text-align: center;
+  line-height: .25em;
+}
+
+/* **********************
+  media query h1.tanlob
+********************** */
+@media (min-width: 700px) {
+  h1.tanyan {
+    /* Minimum font size */
+    font-size: 3em;
+  }
+}
+@media (max-width: 1200px) {
+  h1.tanyan {
+    /* Maximum font size */
+    font-size: 3.5em;
+  }
+}
+
+
+/* _______________________ */
+
+h1.tealyan {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: bold;
+  font-size: 4em;
+  color: #84DCCF;
+  text-align: center;
+  line-height: 1em;
+}
+/* **********************
+  media query h1.tealyan
+********************** */
+@media (min-width: 700px) {
+  h1.tealyan {
+    /* Minimum font size */
+    font-size: 4em;
+  }
+}
+@media (max-width: 1200px) {
+  h1.tealyan {
+    /* Maximum font size */
+    font-size: 4em;
+  }
+}
+
+
+/* _______________________ */
+
+h3.tealyan {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+  color: #84DCCF;
+  text-align: center;
+}
+
+/* **********************
+  media query tealllob
+********************** */
+@media (min-width: 700px) {
+  h3.tealyan {
+    /* Minimum font size */
+    font-size: 3em;
+  }
+}
+@media (max-width: 1200px) {
+  h3.tealyan {
+    /* Maximum font size */
+    font-size: 2.5em;
+    line-height: 1em;
+  }
+}
+
+
+/* _______________________ */
+
+h3.tealyantitle {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 2em;
+  color: #84DCCF;
+  text-align: center;
+
+}
+
+/* **********************
+  media query tealllob
+********************** */
+@media (min-width: 700px) {
+  h3.tealyantitle {
+    /* Minimum font size */
+    font-size: 1.5em;
+  }
+}
+@media (max-width: 1200px) {
+  h3.tealyantitle {
+    /* Maximum font size */
+    font-size: 1.25em;
+    line-height: 1em;
+  }
+}
+
+
+/* _______________________ */
+
+h3.ballerinayan {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 2em;
+  color: #F6E8EA;
+  text-align: center;
+  line-height: 1em;
+}
+
+/* **********************
+  media query tealllob
+********************** */
+@media (min-width: 700px) {
+  h3.ballerinayan {
+    font-size: 2em;
+  }
+}
+@media (max-width: 1200px) {
+  h3.ballerinayan {
+    font-size: 2em;
+  }
+}
+
+
+/* _______________________ */
+
+
+
+h3.coralyan {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: 700;
+  font-size: 2em;
+  color: #EF626C;
+  text-align: center;
+  line-height: auto;
+  margin-top: 0;
+}
+
+/* **********************
+  media query tealllob
+********************** */
+@media (min-width: 700px) {
+  h3.coralyan {
+    /* Minimum font size */
+    font-size: 2em;
+  }
+}
+@media (max-width: 1200px) {
+  h3.coralyan {
+    /* Maximum font size */
+    font-size: 2em;
+  }
+}
+
+/* _______________________ */
+
+p.coralyan {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  color: #EF626C;
+  text-align: center;
+
+}
+
+
+/* **********************
+  media query tealllob
+********************** */
+@media (min-width: 700px) {
+  p.coralyan {
+    /* Minimum font size */
+    font-size: 1.5em;
+  }
+}
+@media (max-width: 1200px) {
+  p.coralyan {
+    /* Maximum font size */
+    font-size: 2em;
+  }
+}
+
+/* _______________________ */
+
+
+p.left {
+  text-align: left;
+}
+
+/* _______________________ */
+
+p.tealyan {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  color: #84DCCF;
+  text-align: left;
+  text-decoration: none;
+  display: block;
+  line-height: .25em;
+
+}
+
+/* **********************
+  media query tealllob
+********************** */
+@media (min-width: 700px) {
+  p.tealyan {
+    /* Minimum font size */
+    font-size: 2em;
+  }
+}
+@media (max-width: 1200px) {
+  p.tealyan {
+    /* Maximum font size */
+    font-size: 3em;
+  }
+}
+
+
+/* _______________________ */
+
+p.title {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: 300;
+  font-size: 1.5em;
+  color: #EF626C;
+  text-align: left;
+  line-height: 1.25em;
+
+}
+/* **********************
+  media query corallob
+********************** */
+@media (min-width: 700px) {
+  p.title  {
+    /* Minimum font size */
+    font-size: 1.5em;
+  }
+}
+@media (max-width: 1200px) {
+  p.title  {
+    /* Maximum font size */
+    font-size: 2em;
+  }
+}
+
+
+/* _______________________ */
+a.tealyan {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 2em;
+  color: #84DCCF;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  line-height: .25em;
+
+}
+/* **********************
+  media query tealllob
+********************** */
+@media (min-width: 700px) {
+  a.tealyan {
+    /* Minimum font size */
+    font-size: 2em;
+  }
+}
+@media (max-width: 1200px) {
+  a.tealyan {
+    /* Maximum font size */
+    font-size: 2em;
+  }
+}
+
+/* _______________________ */
+
+a.coralyan {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 2em;
+  color: #EF626C;
+  text-align: center;
+  line-height: .25em;
+  text-decoration: none;
+
+}
+
+/* **********************
+  media query corallob
+********************** */
+@media (min-width: 700px) {
+  a.coralyan {
+    /* Minimum font size */
+    font-size: 2em;
+  }
+}
+@media (max-width: 1200px) {
+  a.coralyan {
+    /* Maximum font size */
+    font-size: 2em;
+  }
+}
+
+a.coralyan:hover {
+  color: #84DCCF;
+}
+
+
+/* _______________________ */
+
+a.ballerinayan {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  color: #F6E8EA;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+
+
+}
+
+
+
+span.coral {
+  color: #EF626C;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+/* **************
+    rows
+************** */
+
+
+.tan {
+  background-color: #F3F7F0;
+}
+
+.dark {
+  background-color: #19323C;
+}
+
+section.coral {
+  background-color: #EF626C;
+  color: #F6E8EA;
+  margin-top: 0;
+}
+
+
+/* **************
+    colors
+************** */
+.ballerina {
+  color: #F6E8EA;
+}
+
+/* **************
+    animation
+************** */
+
+#right {
+  float: right;
+  vertical-align: bottom;
+}

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Pixel Pup</title>
+  <meta name="description" content="Web Design and Development">
+  <!-- Every responsive website must have this! Forces pixel-dense devices to display content correctly. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Lobster+Two:700i|Yanone+Kaffeesatz" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/styles.css">
+  <link rel="stylesheet" href="CSS/initialize.css">
+  <link rel="stylesheet" href="CSS/grid.css">
+
+
+</head>
+<body>
+  <!-- <div class="container fluid"> -->
+
+
+    <nav class="full">
+      <div class="column one-half">
+        <a href="index.html"><img class="logo" src="IMG/pixelpuplogo_v5.svg"></a>
+      </div>
+      <div class="column one-half">
+        <a data-scroll class="nav" href="#section1">Lundey Inc. /</a>
+        <a data-scroll class="nav" href="#section2">MSPCA-Angell /</a>
+        <a data-scroll class="nav" href="#section3">MSPCA Nevins Farm</a>
+      </div>
+    </nav>
+
+    <nav class="hamburger" role="navigation">
+      <div class="column coralbackground">
+        <a href="index.html"><img class="logo right" src="IMG/pixelpuplogo_v5.svg"></a>
+      </div>
+      <div id="menuToggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <ul id="menu">
+          <a class="ham" href="#section1"><li>Lundey Inc.</li></a>
+          <a class="ham" href="#section2"><li>MSPCA-Angell</li></a>
+          <a class="ham" href="#section3"><li>MSPCA-Angell</li></a>
+          <a class="ham" href="index.html"><li>Home</li></a>
+          <a class="ham" href="index.html#contact"><li>Contact</li></a>
+
+        </ul>
+      </div>
+    </nav>
+
+
+
+
+    <section class="row dark" id="section1">
+      <div class="container">
+        <div class="column">
+          <h1 class="tanyan">Case Studies</h1>
+        </div>
+        <div class="column">
+        <div class="column one-half">
+          <img class="displayed" src="IMG/lundey.png" />
+        </div>
+        <div class="column one-half">
+          <h1 class="tealyan">Lundey Inc.</h1>
+          <h3 class="tealyantitle"><span class="coral">></span> UX/UI Design &mdash; Responsive Web Development</h3>
+
+        </div>
+        <div class="column">
+          <h3 class="tealyan left">Intro:</h3>
+          <p class="coralyan left">Lundey Inc. is a company that creates
+    insulated feed-through terminals. They contacted me because their previous website was lost after their hosting was cancelled. They also wanted an updated mobile-first design.</p>
+          <h3 class="tealyan left">Process:</h3>
+          <p class="coralyan left">Lundey Inc. needed their digital presence back, I was able to find most of the previous content on the &quot;Way Back Machine&quot; and was able to piece together what they once had. </p>
+          <img class="displayed boxshadow" src="IMG/waybackmachine.png">
+          <p class="coralyan left">With the information I gathered, I kept the colors, the images, and content. I also wanted to keep the simplicity, his clients aren't really the type to need all the bells and whistles of an incredibly advanced site, so as much as I could keep on one page, the better. </p>
+
+    <p class="coralyan left">I started with some drawings of how the content would be organized:</p>
+    <img class="displayed boxshadow" src="IMG/lundeysketch.jpg">
+    <p class="coralyan left">From there I went right into building, he needed this up quickly.</p>
+
+
+    <p class="coralyan left">The finished product is a simple, clean, responsive version of his past website.</p>
+    <a class="tealyan" href="http://www.lundey.com">Visit Website<img class="padding" src="IMG/teal_button.png" /></a>
+    </div>
+    </div>
+
+    </div>
+    </section>
+
+
+<!-- MSPCA-Angell -->
+
+    <section class="row tan" id="section2">
+      <div class="container">
+        <div class="column">
+          <h1 class="tealyan">MSPCA-Angell Behavior Department Class Registrations</h1>
+          <h3 class="tealyantitle"><span class="coral">></span> User Experience &mdash; Technology (Cognito Forms) &mdash; User Management</h3>
+        </div>
+
+        <div class="column">
+          <h3 class="tealyan left">Intro:</h3>
+          <p class="coralyan left">Our Animal Behavior Director requested a more simple, streamlined solution that can :</p>
+<p class="coralyan left">1. Enable pet owners to register for classes</p>
+<p class="coralyan left">2. Allow anyone on our team to manage the form entries and data to decrease the number of refunds</p>
+<p class="coralyan left">3. Be compatible with our current CMS, WordPress.</p>
+          <h3 class="tealyan left">Background:</h3>
+          <p class="coralyan left">We were currently using several methods to do one process:</p>
+
+
+
+          <h3 class="tealyan left">Step 1:</h3>
+          <p class="coralyan left">We had an eCommerce store to take payment for class registration. </p>
+          <img class="displayed boxshadow" src="IMG/beginnerpetobedience_button.jpg">
+          <h3 class="tealyan left">Step 2:</h3>
+
+          <img class="displayed boxshadow" src="IMG/beginnerpet_OB_estore.jpg">
+          <h3 class="tealyan left">Step 3:</h3>
+          <p class="coralyan left">After that, if they were paying attention a registration form would pull up on top of their confirmation page. </p>
+          <img class="displayed boxshadow" src="IMG/bostonclassregform.jpg">
+          <h3 class="tealyan left">Problem:</h3>
+          <p class="coralyan left">There were a lot of dog owners that never filled out the registration form. Even worse, since the form was really long and they only had 20 minutes to complete it, a lot of people would be kicked out before they were finished. Our training coordinators would have to them chase the owners down and ask them to fill out the form for the first time, or again.</p> <p class="coralyan left">In addition, there were quite a few over sells of classes because there were several unrelated user types that would buy classes:</p>
+          <p class="coralyan left">Adopters (those entered in through the adoption center)</p> <p class="coralyan left">Pet owners buying one class</p> <p class="coralyan left">Pet owners buying a "package" of classes.</p>
+          <p class="coralyan left">The original process we had didn't have a way to be able to track one total inventory for all these different types of users</p>
+          <h3 class="tealyan left">Solution:</h3>
+
+    <p class="coralyan left">After thorough research on a non-profit budget, I was able to find a product that had enough ability for customization, and was within a proper price range. The next step was organizing all the pieces into one beautiful form. This required a lot of time and thought because there were so many packages that would change prices and which classes would be shown for purchase. I had to lay all the parts out in order to see the &quot;logic&quot; each step would need.</p>
+    <img class="displayed boxshadow" src="IMG/classplan_wall.jpg">
+    <p class="coralyan left">After the &quot;pre-planning&quot; for where everything in the form would go and what would happen if they selected each class or package, it was time to get that logic down. </p>
+  </div>
+  <div class="column">
+<img class="displayed boxshadow" src="IMG/puppypakcage.jpg">
+</div>
+<div class="column">
+<img class="displayed boxshadow" src="IMG/ppcode.jpg">
+</div>
+<div class="column">
+  <p class="coralyan left">Every part of the form can be customized with your own logic so that the proper information will come up when someone selects certain choices, or enters coupons. </p>
+    <div class="column one-third"><img class="displayed boxshadow" src="IMG/ifstatement1.jpg"></div>
+<div class="column one-third"><img class="displayed boxshadow" src="IMG/ifstatement2.jpg"></div>
+<div class="column one-third"><img class="displayed boxshadow" src="IMG/ifstatement3.jpg"></div>
+  </div>
+<p class="coralyan left">We now have a combined payment and registration in one simple step, in additon we are now able to use logic so that all the seperate user types can pull from the same inventory. Unfortuantely, this project is still currently being worked on, but will be live within the month. The next steps is for me to collect the data with how many oversells we have (if we have any), and if we process less refunds. </p>
+    </div>
+    </div>
+
+    </div>
+    </section>
+
+
+<!-- MSPCA Nevins Farm -->
+
+<section class="row dark" id="section3">
+  <div class="container">
+    <div class="container">
+      <div class="column">
+        <h1 class="tealyan">MSPCA-Angell Nevins Farm Summer Camp Registration</h1>
+        <h3 class="tealyantitle"><span class="coral">></span> User Experience &mdash; Technology (Cognito Forms) &mdash; User Management</h3>
+      </div>
+    <div class="column">
+
+      <h3 class="tealyan left">Intro:</h3>
+      <p class="coralyan left">Our Camp Program Director came to me asking for an easy, streamlined way for campers' parents to register them for camp that would also be user-friendly for anyone to manage  new form builds and entries. In addition, it had to be compatible with WordPress. </p>
+      <h3 class="tealyan left">Current Process:</h3>
+      <p class="coralyan left">We had an eCommerce store to take payment for camp.</p>
+      <img class="displayed boxshadow" src="IMG/NFSC_1.jpg">
+        <p class="coralyan left">After that, they would get an autoresponder that will ask them to remember to go back to the website in order to download the proper forms to finish registration.</p>
+        <img class="displayed boxshadow" src="IMG/NFSC_3.jpg">
+          <p class="coralyan left">These forms would then need to be filled out, signed, and brought in along with vaccinations on the first day.</p>
+<h3 class="tealyan left">Problem:</h3>
+<p class="coralyan left">At least one of these pieces would be missed while the parent was registering. </p>
+  <p class="coralyan left">The program director and some volunteers (if she's lucky to have them) would have to chase down parents for their camper's information. Which increses their workload about 20 hours a month.</p>
+    <p class="coralyan left">If they missed a parent and the child didn't have vaccination records then they wouldn't be able to take part in camp, bringing a lot of frustration to parents and counselors alike.</p>
+    <h3 class="tealyan left">Solution:</h3>
+    <p class="coralyan left">After thorough research on a non-profit budget, I was able to find a product that had enough ability for customization, and was within a proper price range, Cognito Forms. The next step was organizing all the pieces into one beautiful form.</p>
+<img class="displayed boxshadow" src="IMG/NFSC_6.jpg">
+    <p class="coralyan left">Every part of the form can be customized with your own logic so that the proper information will come up when someone selects certain choices, or enters coupons. </p>
+
+
+        <p class="coralyan left">Features I've added: </p>
+          <p class="coralyan left">A place to upload vaccination records right away.</p>
+          <img class="displayed boxshadow" src="IMG/NFSC_7.jpg">
+            <p class="coralyan left">Make sure they sign all required documents online, and in one step.</p>
+            <img class="displayed boxshadow" src="IMG/NFSC_8.jpg">
+            <h3 class="tealyan left">Reactions:</h3>
+            <p class="coralyan left">According to the Program Director this form has "changed their lives." They no longer dedicate 20 hours a month chasing people around for their information. They also no longer have to keep track of registration inventory manually, which frees up more time for them to promote their camp.</p>
+            <a class="tealyan" href="https://www.mspca.org/adoption-centers/nevins-farm-adoption-center/humane-education-programs-at-nevins-farm/summer-camp/complete-summer-camp-registration/">Visit The Form<img class="padding" src="IMG/teal_button.png" /></a>
+
+
+</div>
+</div>
+
+</div>
+</section>
+
+
+
+
+    <footer>
+      <div class="container">
+        <div class="column one-half">
+          <div id="footer"><a href="mailto:kaylynklatt@pixel-pup.com"><img class="icon ballerina" src="IMG/mail.svg" /></a>
+            <a href="https://www.linkedin.com/in/kaydc18/"><img class="icon ballerina" src="IMG/linkein.svg" /></a>
+            <a href="https://www.instagram.com/lilportybeagles/"><img class="icon ballerina" src="IMG/instagram.svg" /></a>
+            <a href="https://github.com/kaydc18"><img class="icon ballerina" src="IMG/git.svg" /></a> </div>
+      </div>
+      <div class="column one-half">
+        <p class="copyright">Handmade with love by me &copy; 2018</p>
+      </div>
+  </div>
+  </footer>
+<!-- </div> -->
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.easing.1.3.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+  // Scroll to the desired section on click
+  // Make sure to add the `data-scroll` attribute to your `<a>`          tag.
+  // Example:
+  // `<a data-scroll href="#my-section">My Section</a>` will scroll to an element with the id of 'my-section'.
+  function scrollToSection(event) {
+    event.preventDefault();
+    var $section = $($(this).attr('href'));
+    $('html, body').animate({
+      scrollTop: $section.offset().top
+    }, 500);
+  }
+  $('[data-scroll]').on('click', scrollToSection);
+}(jQuery));
+</script>
+
+
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/4550548.js"></script>
+<!-- End of HubSpot Embed Code -->
+</body>
+</html>

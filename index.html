@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Pixel Pup</title>
+  <meta name="description" content="Web Design and Development">
+  <!-- Every responsive website must have this! Forces pixel-dense devices to display content correctly. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Lobster+Two:700i|Yanone+Kaffeesatz" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/initialize.css">
+  <link rel="stylesheet" href="CSS/grid.css">
+  <link rel="stylesheet" href="CSS/project.css">
+  <link rel="stylesheet" href="CSS/styles.css">
+
+
+</head>
+<body>
+  <!-- <div class="container fluid"> -->
+
+
+    <nav class="full">
+      <div class="column one-half">
+        <a href="index.html"><img class="logo" src="IMG/pixelpuplogo_v5.svg"></a>
+      </div>
+      <div class="column one-half">
+        <a class="nav" href="#about">About Me /</a>
+        <a class="nav" href="#work">Work /</a>
+        <a class="nav" href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <nav class="hamburger" role="navigation">
+      <div class="column coralbackground">
+        <a href="index.html"><img class="logo right" src="IMG/pixelpuplogo_v5.svg"></a>
+      </div>
+      <div id="menuToggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <ul id="menu">
+          <a class="ham" href="#about"><li>About</li></a>
+          <a class="ham" href="#work"><li>Case Studies</li></a>
+          <a class="ham" href="#contact"><li>Contact</li></a>
+
+        </ul>
+      </div>
+    </nav>
+//Me
+
+  <section class="row tan pt-page pt-page-1" id="home">
+    <div class="container">
+    <div class="column one-half">
+      <h1 class="coralyanreg">Hi, I'm Kaylyn.</h1>
+      <h3 class="tealyan">I like to design and develop websites to help customers sniff you out</h3>
+
+        <div class="column one-half">
+          <a class="coralyan" href="IMG/resume_Klattk2018.pdf">Resume<img class="padding" src="IMG/coral_button.png" ></a>
+        </div>
+        <div class="column one-half">
+          <a class="coralyan" href="work.html">Projects<img class="padding" src="IMG/coral_button.png" ></a>
+        </div>
+    </div>
+    <div class="column one-half">
+      <img class="displayed" src="IMG/kaylyn_headshot.png" >
+    </div>
+  </div>
+</section>
+
+//skill info
+
+  <section class="row dark pt-page pt-page-2" id="about">
+    <div class="container">
+      <div class="column">
+        <h1 class="coralyan">My Skills</h1>
+      </div>
+    <div class="column">
+      <div class="column one-half">
+        <img class="displayed small" src="IMG/ux.svg" />
+        <h3 class="coralyan">UX/UI</h3>
+        <p class="coralyan">I sketch and wireframe with a focus on guiding your users through a well thought&ndash;out experience.</p>
+      </div>
+      <div class="column one-half">
+        <img class="displayed small" src="IMG/code.svg" />
+        <h3 class="coralyan">CODE</h3>
+        <p class="coralyan">I code using HTML, and CSS. I love to code from scratch, but also have some experience using CRMs.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+//project info
+
+<section class="row tan pt-page pt-page-3" id="work">
+  <a name="contact"></a><div class="container">
+    <div class="column">
+      <h1 class="coralyan">Contact Me</h1>
+    </div>
+  <div class="column">
+    <div class="column one-half">
+
+    </div>
+    <div class="column one-half">
+      <p class="coralyan" >"Kaylyn Klatt was one of the most enthusiastic, hardworking, reliable, intelligent, and creative design interns I have had the pleasure of working with." </p>
+      <div class="column">
+
+        <p class="tealyan">Julia Young</p>
+        <p class="title">Studio Manager<br>
+          at Peter H. Reynolds Studio</p>
+        </div>
+
+    </div>
+  </div>
+</div>
+</section>
+//contact info
+  <section class="row tan pt-page pt-page-4" id="contact">
+    <a name="contact"></a><div class="container">
+      <div class="column">
+        <h1 class="coralyan">Contact Me</h1>
+      </div>
+    <div class="column">
+      <div class="column one-half">
+        <form method="post" name="myemailform" action="form-to-email.php">
+        	<p>
+        		<label for='name'>Name </label><br>
+        		<input type="text" name="name" placeholder="Name">
+        	</p>
+        	<p>
+        		<label for='email'>Enter Email Address</label><br>
+        		<input type="text" name="email" placeholder="Email">
+        	</p>
+        	<p>
+        		<label for='message'>Enter Message:</label> <br>
+        		<textarea name="message" placeholder="Message"></textarea>
+        	</p>
+        	<button class="button" type="submit" name='submit' value="submit">Submit<img class="padding" src="IMG/coral_button.png" /></button>
+        </form>
+        <script language="JavaScript">
+        var frmvalidator  = new Validator("myemailform");
+        frmvalidator.addValidation("name","req","Please provide your name");
+        frmvalidator.addValidation("email","req","Please provide your email");
+        frmvalidator.addValidation("email","email","Please enter a valid email address");
+        </script>
+      </div>
+      <div class="column one-half">
+        <p class="coralyan" >"Kaylyn Klatt was one of the most enthusiastic, hardworking, reliable, intelligent, and creative design interns I have had the pleasure of working with." </p>
+        <div class="column">
+
+          <p class="tealyan">Julia Young</p>
+          <p class="title">Studio Manager<br>
+            at Peter H. Reynolds Studio</p>
+          </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+  <footer>
+    <div class="container">
+      <div class="column one-half">
+        <div id="footer"><a href="mailto:kaylynklatt@pixel-pup.com"><img class="icon ballerina" src="IMG/mail.svg" /></a>
+          <a href="https://www.linkedin.com/in/kaydc18/"><img class="icon ballerina" src="IMG/linkein.svg" /></a>
+          <a href="https://www.instagram.com/lilportybeagles/"><img class="icon ballerina" src="IMG/instagram.svg" /></a>
+          <a href="https://github.com/kaydc18"><img class="icon ballerina" src="IMG/git.svg" /></a> </div>
+    </div>
+    <div class="column one-half">
+      <p class="copyright">Handmade with love by me &copy; 2018</p>
+    </div>
+</div>
+</footer>
+<!-- </div> -->
+
+
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/4550548.js"></script>
+<!-- End of HubSpot Embed Code -->
+
+</body>
+</html>
